@@ -25,6 +25,7 @@ def droneShipping(weight):
     pricePerPound = 14.25
   return 0 + (weight * pricePerPound)
 
+#Recommend Cheapest Shipping Option
 def cheapestShipping(weight):
   ground = groundShipping(weight)
   premium = premiumGroundShipping
@@ -43,6 +44,3 @@ def cheapestShipping(weight):
   print("The cheapest shipping option is $%.2f with %s shipping."
   % (cost, method)
 )
-
-cheapestShipping(4.8)
-cheapestShipping(41.5)
